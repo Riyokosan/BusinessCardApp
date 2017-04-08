@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BusinessCardApp</string>
+    <string name="business">Nexon</string>
+    <string name="slogan">The Best in Online Games</string>
+    <string name="about">About the company:</string>
+    <string name="description">As a pioneer in the world of interactive entertainment software, we introduced the world to the first graphic MMORPG, The Kingdom of the Winds, back in 1995. Since then, we have become the industry leader in massively multiplayer online games, continuing to redefine the genre with each of our innovative titles.\n\n Notably, we developed the world first internet quiz game, QPlay, set a world record of 700,000 concurrent users in China with our smash hit Crazy Arcade BnB, and developed the most played online game in South Korea (played by over 30% of the population), KartRider, which is considered to be the national game in Korea. </string>
+    <string name="website">http://www.nexon.net/</string>
+    <string name="phone">+49 (0)30 223 749 6000</string>
+    <string name="email">contact@nexoneu.com</string>
+</resources>

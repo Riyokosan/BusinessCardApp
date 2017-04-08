@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.businesscardapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background" />
+
+        <TextView
+            android:id="@+id/business"
+            style="@style/business"
+            android:text="@string/business" />
+
+        <TextView
+            android:id="@+id/slogan"
+            style="@style/slogan"
+            android:text="@string/slogan"
+            android:layout_marginTop="27dp"
+            android:layout_below="@+id/business"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_weight="4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/about"
+                style="@style/title"
+                android:text="@string/about" />
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/description"
+                android:text="@string/description"
+                android:layout_below="@id/about"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp" />
+
+            <ImageView
+                android:id="@+id/website"
+                style="@style/contactImage"
+                android:layout_below="@id/description"
+                android:src="@drawable/website" />
+
+            <TextView
+                style="@style/contact"
+                android:text="@string/website"
+                android:layout_below="@id/description"
+                android:layout_toEndOf="@id/website"/>
+
+            <ImageView
+                android:id="@+id/email"
+                style="@style/contactImage"
+                android:layout_below="@id/website"
+                android:src="@drawable/email" />
+
+            <TextView
+                style="@style/contact"
+                android:text="@string/email"
+                android:layout_toEndOf="@id/email"
+                android:layout_below="@id/website"/>
+
+            <ImageView
+                android:id="@+id/phone"
+                style="@style/contactImage"
+                android:layout_below="@id/email"
+                android:src="@drawable/phone" />
+
+            <TextView
+                style="@style/contact"
+                android:text="@string/phone"
+                android:layout_toEndOf="@id/phone"
+                android:layout_below="@id/email"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        tools:context="com.example.android.businesscard.BusinessCard"
+        android:layout_weight="1">
+
+        <ImageView
+            style="@style/socialMedia"
+            android:src="@drawable/facebook"/>
+
+        <ImageView
+            style="@style/socialMedia"
+            android:src="@drawable/google"/>
+
+        <ImageView
+            style="@style/socialMedia"
+            android:src="@drawable/linkedin"/>
+
+        <ImageView
+            style="@style/socialMedia"
+            android:src="@drawable/twitter"/>
+
+    </LinearLayout>
+
+</LinearLayout>
